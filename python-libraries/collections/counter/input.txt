@@ -1,0 +1,5 @@
+Python python counter Counter
+collections COLLECTIONS LIST
+list LIst Dictionary {DICTIONARY}
+TUPLE tuple tuple counter {COUNTER}
+Set, python, PYTHON, python
