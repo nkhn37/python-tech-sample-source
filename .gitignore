@@ -109,6 +109,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+# venv for cabocha (32bit python environment)
+.venv_cabocha
 
 # Spyder project settings
 .spyderproject
