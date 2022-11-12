@@ -132,3 +132,6 @@ dmypy.json
 
 # Chrome driver
 chromedriver.exe
+
+# log files
+*.log*
