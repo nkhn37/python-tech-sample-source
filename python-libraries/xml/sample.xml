@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<memberlist>
+  <member rank="normal">
+    <no>1</no>
+    <name>A</name>
+    <address>愛知県名古屋市XXXXXX</address>
+    <phone>090-0000-1111</phone>
+  </member>
+  <member rank="premium">
+    <no>2</no>
+    <name>B</name>
+    <address>東京都新宿区XXXXXX</address>
+    <phone>090-1111-0000</phone>
+  </member>
+  <member rank="normal">
+    <no>3</no>
+    <name>C</name>
+    <address>大阪府大阪市XXXXXX</address>
+    <phone>080-0000-1111</phone>
+  </member>
+</memberlist>
