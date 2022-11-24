@@ -12,8 +12,12 @@ plt.style.use("seaborn-whitegrid")
 
 def sigmoid(x):
     """シグモイド関数
-    :param x: 入力
-    :return: 出力
+
+    Args:
+        x: 入力
+
+    Returns:
+        出力
     """
     return 1 / (1 + np.exp(-x))
 
