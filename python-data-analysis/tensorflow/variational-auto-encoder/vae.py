@@ -15,6 +15,12 @@ class VAE(keras.Model):
     """VAE (Variational Auto Encoder)モデル"""
 
     def __init__(self, encoder, decoder, **kwargs):
+        """コンストラクタ
+
+        Args:
+            encoder: エンコーダー
+            decoder: デコーダー
+        """
         super(VAE, self).__init__(**kwargs)
         self.encoder = encoder
         self.decoder = decoder
@@ -36,8 +42,12 @@ class VAE(keras.Model):
 
     def train_step(self, data):
         """訓練ステップ
-        :param data: 入力データ
-        :return: 損失値
+
+        Args:
+            data: 入力データ
+
+        Returns:
+            損失値 (total_loss, reconstruction_loss, kl_loss)
         """
         with tf.GradientTape() as tape:
             z_mean, z_log_var = self.encoder(data)
@@ -77,6 +87,15 @@ class Sampler(layers.Layer):
     """潜在変数zのサンプル実行クラス"""
 
     def call(self, z_mean, z_log_var):
+        """実行関数
+
+        Args:
+            z_mean: 平均
+            z_log_var: 分散(対数)
+
+        Returns:
+            サンプリング値
+        """
         batch_size = tf.shape(z_mean)[0]
         z_size = tf.shape(z_mean)[1]
 
