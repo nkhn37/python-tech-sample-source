@@ -2,7 +2,7 @@
 リスト内包表記の使い方
 
 [説明ページ]
-https://tech.nkhn37.net/python-list-comprehension/#i
+https://tech.nkhn37.net/python-list-comprehension/#i-2
 
 [内包表記まとめページ]
 https://tech.nkhn37.net/python-comprehension/
@@ -11,4 +11,4 @@ https://tech.nkhn37.net/python-comprehension/
 # リスト内包表記を使って記載する方法
 data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 new_data = [i for i in data if i % 2 == 0]
-print(f'new_data: {new_data}')
+print(f"new_data: {new_data}")
