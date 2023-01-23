@@ -4,15 +4,15 @@
 [説明ページ]
 https://tech.nkhn37.net/python-dict-add-update/#_setdefault
 """
-# キーがー存在しない場合にのみ追加 (setvalue関数)
-d = {'k1': 1, 'k2': 2}
-print(f'd: {d}')
+# 辞書を定義する
+d = {"k1": 1, "k2": 2}
+print(f"d: {d}\n")
 
 # setdefaultを使って要素を追加
 # キーが存在しない場合
-print(d.setdefault('k3', 3))
-print(f'd: {d}')
+print(d.setdefault("k3", 3))
+print(f"d: {d}")
 
 # キーが存在する場合
-print(d.setdefault('k1', 5))
-print(f'd: {d}')
+print(d.setdefault("k1", 5))
+print(f"d: {d}")

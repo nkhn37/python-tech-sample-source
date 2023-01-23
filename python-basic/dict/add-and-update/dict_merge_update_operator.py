@@ -10,23 +10,23 @@ https://tech.nkhn37.net/python-dict-add-update/#_Python39
 [Python3.9ドキュメント]
 https://docs.python.org/ja/3.9/whatsnew/3.9.html#dictionary-merge-update-operators
 """
-print('===== |演算子を使用した辞書の結合')
-d1 = {'k1': 1, 'k2': 2}
-print(f'd1: {d1}')
-d2 = {'k2': 10, 'k3': 20, 'k4': 30}
-print(f'd2: {d2}')
+print("===== |演算子を使用した辞書の結合")
+d1 = {"k1": 1, "k2": 2}
+print(f"d1: {d1}")
+d2 = {"k2": 10, "k3": 20, "k4": 30}
+print(f"d2: {d2}")
 
 # |演算子を使用
-print(f'd1|d2 : {d1|d2}')
-print(f'd2|d1 : {d2|d1}')
+print(f"d1|d2 : {d1|d2}")
+print(f"d2|d1 : {d2|d1}")
 
 # =============================================================================
-print('\n===== |=演算子を使用した辞書の結合')
-d1 = {'k1': 1, 'k2': 2}
-print(f'd1: {d1}')
-d2 = {'k2': 10, 'k3': 20, 'k4': 30}
-print(f'd2: {d2}')
+print("\n===== |=演算子を使用した辞書の結合")
+d1 = {"k1": 1, "k2": 2}
+print(f"d1: {d1}")
+d2 = {"k2": 10, "k3": 20, "k4": 30}
+print(f"d2: {d2}")
 
 # |=演算子を使用
 d1 |= d2
-print(f'd1: {d1}')
+print(f"d1: {d1}")
