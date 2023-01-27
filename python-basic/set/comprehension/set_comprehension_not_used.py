@@ -6,7 +6,7 @@
 同じ書き方ができる場合は、集合内包表記を利用することを検討しましょう。
 
 [説明ページ]
-https://tech.nkhn37.net/python-set-comprehension/#i
+https://tech.nkhn37.net/python-set-comprehension/#i-3
 
 [内包表記まとめページ]
 https://tech.nkhn37.net/python-comprehension/
@@ -18,4 +18,4 @@ data_set = set()
 for dt in data:
     if dt % 2 == 0:
         data_set.add(dt)
-print(f'data_set : {data_set}')
+print(f"data_set : {data_set}")
