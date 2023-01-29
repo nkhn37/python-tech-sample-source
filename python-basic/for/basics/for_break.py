@@ -8,9 +8,9 @@ https://tech.nkhn37.net/python-for/#break
 data = [10, 20, 30, 40, 50]
 
 for dt in data:
-    print(f'start: {dt}')
+    print(f"start: {dt}")
     if dt > 30:
         # 30より大きい値の場合はループを抜ける
-        print('break')
+        print("break")
         break
-    print('end')
+    print("end")

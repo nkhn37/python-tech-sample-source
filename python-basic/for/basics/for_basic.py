@@ -8,4 +8,4 @@ https://tech.nkhn37.net/python-for/#for-2
 data = [10, 20, 30, 40, 50]
 
 for dt in data:
-    print(f'dt: {dt}')
+    print(f"dt: {dt}")
