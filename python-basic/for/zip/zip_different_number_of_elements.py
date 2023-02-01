@@ -6,11 +6,11 @@ zipで要素数が異なる場合の実行結果
 サンプルソースコードはzip_longest_from_itertools.pyを参照
 
 [説明ページ]
-https://tech.nkhn37.net/python-for-zip/#zip
+https://tech.nkhn37.net/python-for-zip/#zip-2
 """
-# 要素の長さが異なる場合
 data1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-data2 = ['A', 'B', 'C', 'D', 'E']
+data2 = ["A", "B", "C", "D", "E"]
 
+# 要素の長さが異なる場合(少ない要素数にあわせて実行される)
 for dt1, dt2 in zip(data1, data2):
-    print(f'dt1: {dt1}, dt2: {dt2}')
+    print(f"dt1: {dt1}, dt2: {dt2}")
