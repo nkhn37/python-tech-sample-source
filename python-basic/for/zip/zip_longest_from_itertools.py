@@ -9,11 +9,11 @@
 [説明ページ]
 https://tech.nkhn37.net/python-for-zip/#itertoolszip_longest
 """
-# itertools.zip_longestを用いて、不足分を補完する
 import itertools
 
 data1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-data2 = ['A', 'B', 'C', 'D', 'E']
+data2 = ["A", "B", "C", "D", "E"]
 
+# itertools.zip_longestを用いて、不足分をNoneで補完する
 for dt1, dt2 in itertools.zip_longest(data1, data2):
-    print(f'dt1: {dt1}, dt2: {dt2}')
+    print(f"dt1: {dt1}, dt2: {dt2}")
