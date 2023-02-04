@@ -9,12 +9,12 @@ https://tech.nkhn37.net/python-if-basic/#TrueFalse
 # 空リストの判定
 data_l = []
 if data_l:
-    print('リストには値が入っています。')
+    print("リストには値が入っています。")
 else:
-    print('リストは空です。')
+    print("リストは空です。")
 
 data_l = [10, 20, 30]
 if data_l:
-    print('リストには値が入っています。')
+    print("リストには値が入っています。")
 else:
-    print('リストは空です。')
+    print("リストは空です。")
