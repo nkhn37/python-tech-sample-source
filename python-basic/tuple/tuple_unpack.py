@@ -2,9 +2,9 @@
 タプルのアンパック
 
 [説明ページ]
-https://tech.nkhn37.net/python-tuple-basic/#i
+https://tech.nkhn37.net/python-tuple-basic/#i-4
 """
 # タプルのアンパック
-tpl = ('A', 'B', 'C')
+tpl = ("A", "B", "C")
 a, b, c = tpl
-print(f'a = {a}, b = {b}, c = {c}')
+print(f"a = {a}, b = {b}, c = {c}")
