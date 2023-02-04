@@ -8,7 +8,6 @@ import unittest
 
 import sample
 
-
 # スキップ用フラグ
 SKIP_FLAG = True
 
