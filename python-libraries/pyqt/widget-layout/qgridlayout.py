@@ -24,16 +24,16 @@ class MainWindow(qtw.QWidget):
         self.setLayout(grid_layout)
 
         # ウィジェットを用意
-        label = qtw.QLabel("ラベル", self)
-        line_edit = qtw.QLineEdit(self, placeholderText="入力してください。")
-        check = qtw.QCheckBox("チェック", self)
-        button = qtw.QPushButton("ボタン", self)
+        self.label = qtw.QLabel("ラベル", self)
+        self.line_edit = qtw.QLineEdit(self, placeholderText="入力してください。")
+        self.check = qtw.QCheckBox("チェック", self)
+        self.button = qtw.QPushButton("ボタン", self)
 
         # レイアウトにウィジェットを追加
-        grid_layout.addWidget(label, 0, 0)
-        grid_layout.addWidget(line_edit, 0, 1)
-        grid_layout.addWidget(check, 1, 0)
-        grid_layout.addWidget(button, 1, 1)
+        grid_layout.addWidget(self.label, 0, 0)
+        grid_layout.addWidget(self.line_edit, 0, 1)
+        grid_layout.addWidget(self.check, 1, 0)
+        grid_layout.addWidget(self.button, 1, 1)
 
         # 画面表示
         self.show()

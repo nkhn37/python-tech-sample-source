@@ -24,16 +24,16 @@ class MainWindow(qtw.QWidget):
         self.setLayout(vertical_layout)
 
         # ウィジェットを用意
-        label = qtw.QLabel("ラベル", self)
-        line_edit = qtw.QLineEdit(self, placeholderText="入力してください。")
-        check = qtw.QCheckBox("チェック", self)
-        button = qtw.QPushButton("ボタン", self)
+        self.label = qtw.QLabel("ラベル", self)
+        self.line_edit = qtw.QLineEdit(self, placeholderText="入力してください。")
+        self.check = qtw.QCheckBox("チェック", self)
+        self.button = qtw.QPushButton("ボタン", self)
 
         # レイアウトにウィジェットを追加
-        vertical_layout.addWidget(label)
-        vertical_layout.addWidget(line_edit)
-        vertical_layout.addWidget(check)
-        vertical_layout.addWidget(button)
+        vertical_layout.addWidget(self.label)
+        vertical_layout.addWidget(self.line_edit)
+        vertical_layout.addWidget(self.check)
+        vertical_layout.addWidget(self.button)
         vertical_layout.addStretch()
 
         # 画面表示

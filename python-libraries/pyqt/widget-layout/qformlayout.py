@@ -24,16 +24,16 @@ class MainWindow(qtw.QWidget):
         self.setLayout(form_layout)
 
         # ウィジェットを用意
-        label = qtw.QLabel("入力フォーム", self)
-        line_edit1 = qtw.QLineEdit(self)
-        line_edit2 = qtw.QLineEdit(self)
-        button = qtw.QPushButton("ボタン", self)
+        self.label = qtw.QLabel("入力フォーム", self)
+        self.line_edit1 = qtw.QLineEdit(self)
+        self.line_edit2 = qtw.QLineEdit(self)
+        self.button = qtw.QPushButton("ボタン", self)
 
         # フォームレイアウトへの配置
-        form_layout.addRow(label)
-        form_layout.addRow("入力 1", line_edit1)
-        form_layout.addRow("入力 2", line_edit2)
-        form_layout.addRow(button)
+        form_layout.addRow(self.label)
+        form_layout.addRow("入力 1", self.line_edit1)
+        form_layout.addRow("入力 2", self.line_edit2)
+        form_layout.addRow(self.button)
 
         # 画面表示
         self.show()

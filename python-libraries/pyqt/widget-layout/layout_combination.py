@@ -24,20 +24,20 @@ class MainWindow(qtw.QWidget):
         self.setLayout(layout)
 
         # ウィジェットを用意
-        label1 = qtw.QLabel("ラベル", self)
-        label2 = qtw.QLabel("入力欄: ", self)
-        line_edit = qtw.QLineEdit(self, placeholderText="入力してください。")
-        button = qtw.QPushButton("ボタン", self)
+        self.label1 = qtw.QLabel("ラベル", self)
+        self.label2 = qtw.QLabel("入力欄: ", self)
+        self.line_edit = qtw.QLineEdit(self, placeholderText="入力してください。")
+        self.button = qtw.QPushButton("ボタン", self)
 
         # レイアウトにウィジェットを追加
-        layout.addWidget(label1)
+        layout.addWidget(self.label1)
         # サブレイアウトを作成して追加
         sublayout = qtw.QHBoxLayout()
-        sublayout.addWidget(label2)
-        sublayout.addWidget(line_edit)
+        sublayout.addWidget(self.label2)
+        sublayout.addWidget(self.line_edit)
         layout.addLayout(sublayout)
         # 他のウィジェットを追加
-        layout.addWidget(button)
+        layout.addWidget(self.button)
         layout.addStretch()
 
         # 画面表示
