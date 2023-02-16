@@ -11,11 +11,11 @@ def func_2(num):
     return 2 * num
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     x1 = 5
     y1 = func_2(x1)
-    print(f'x1 = {x1}, y1 = {y1}')
+    print(f"x1 = {x1}, y1 = {y1}")
 
     x2 = 10
     y2 = func_2(x2)
-    print(f'x2 = {x2}, y2 = {y2}')
+    print(f"x2 = {x2}, y2 = {y2}")

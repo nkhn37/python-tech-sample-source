@@ -6,13 +6,14 @@
 問題が発生しうるケースはfunction_default_arg_caution.pyを参照
 
 [解決策]
-デフォルト引数にNoneを指定して、Noneの場合に初期化する関数にする
+デフォルト値にNoneを指定して、Noneの場合に初期化する関数にする
 
 [説明ページ]
-https://tech.nkhn37.net/python-function-basic/#i-8
+https://tech.nkhn37.net/python-function-basic/#i-12
 """
 
 
+# デフォルト値にNoneを指定して、Noneの場合に初期化する関数にする
 def sample_function(in1, tmp_list=None):
     if tmp_list is None:
         tmp_list = []
@@ -20,9 +21,9 @@ def sample_function(in1, tmp_list=None):
     return tmp_list
 
 
-if __name__ == '__main__':
-    result1 = sample_function('A')
+if __name__ == "__main__":
+    result1 = sample_function("A")
     print(result1)
 
-    result2 = sample_function('B')
+    result2 = sample_function("B")
     print(result2)

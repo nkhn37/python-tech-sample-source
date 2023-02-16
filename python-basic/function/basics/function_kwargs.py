@@ -6,11 +6,12 @@ https://tech.nkhn37.net/python-function-basic/#kwargs
 """
 
 
+# **kwargsによるキーワード引数の辞書受取
 def print_input(**kwargs):
     print(type(kwargs))
     for k, v in kwargs.items():
-        print(f'key: {k}, value:{v}')
+        print(f"key: {k}, value:{v}")
 
 
-if __name__ == '__main__':
-    print_input(opt1=1, opt2=2, value='python')
+if __name__ == "__main__":
+    print_input(opt1=1, opt2=2, value="python")

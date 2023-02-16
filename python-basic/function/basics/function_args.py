@@ -6,11 +6,12 @@ https://tech.nkhn37.net/python-function-basic/#args
 """
 
 
+# *argsによる位置引数の受け取り
 def print_input(*args):
     print(type(args))
     for i, arg in enumerate(args):
-        print(f'arg[{i}] = {arg}')
+        print(f"arg[{i}] = {arg}")
 
 
-if __name__ == '__main__':
-    print_input(1, 2, 'A', 'B', [1, 2])
+if __name__ == "__main__":
+    print_input(1, 2, "A", "B", [1, 2])
