@@ -135,3 +135,6 @@ chromedriver.exe
 
 # log files
 *.log*
+
+# Pycharm Folder .idea
+.idea/
