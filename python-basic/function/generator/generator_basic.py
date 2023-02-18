@@ -1,19 +1,20 @@
 """関数基礎
 ジェネレータ(generator)の基本
+yieldによる返却
 
 [説明ページ]
-https://tech.nkhn37.net/python-generator-yield/#_yield
+https://tech.nkhn37.net/python-generator-yield/#yield
 """
 
 
-# generator sample
+# generator関数
 def generate_char():
-    yield 'A'
-    yield 'B'
-    yield 'C'
+    yield "A"
+    yield "B"
+    yield "C"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     gen = generate_char()
     print(type(gen))
 
