@@ -2,7 +2,7 @@
 ジェネレータ(generator)のfor文での使用例
 
 [説明ページ]
-https://tech.nkhn37.net/python-generator-yield/#generatorfor
+https://tech.nkhn37.net/python-generator-yield/#for
 """
 
 
