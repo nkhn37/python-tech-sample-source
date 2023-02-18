@@ -22,7 +22,7 @@ class CsvTableModel(qtc.QAbstractTableModel):
         """CSVファイルを読み込みデータをセットする
 
         Args:
-            filename: CSVファイルパス
+            filepath: CSVファイルパス
         """
         if filepath:
             self.filepath = filepath
@@ -166,8 +166,6 @@ class CsvTableModel(qtc.QAbstractTableModel):
 
 class View(qtw.QWidget):
     """MainView"""
-
-    col_name_signal = qtc.pyqtSignal(str)
 
     def __init__(self):
         """Viewコンストラクタ"""
