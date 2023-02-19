@@ -6,13 +6,14 @@
 同じ書き方ができる場合は、ジェネレータ内包表記を利用することを検討しましょう。
 
 [説明ページ]
-https://tech.nkhn37.net/python-generator-comprehension/#i
+https://tech.nkhn37.net/python-generator-comprehension/#i-4
 
 [内包表記まとめページ]
 https://tech.nkhn37.net/python-comprehension/
 """
 
 
+# ジェネレータ関数で定義
 def generate_num():
     for g in range(10):
         if g % 2 == 0:
