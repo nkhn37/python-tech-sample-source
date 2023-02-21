@@ -18,7 +18,7 @@ def measure_execution_time(func):
         timer_end = time.time()
         # 処理時間を計算
         elapsed_time = timer_end - timer_start
-        print(f'処理実行時間: {elapsed_time} sec')
+        print(f"処理実行時間: {elapsed_time} sec")
         return result
 
     return wrapper
@@ -26,7 +26,7 @@ def measure_execution_time(func):
 
 def sum_range_value(start, end, step=1):
     result = 0
-    for i in range(start, end+1, step):
+    for i in range(start, end + 1, step):
         result += i
     return result
 
@@ -37,5 +37,5 @@ def main():
     print(sum_value)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
