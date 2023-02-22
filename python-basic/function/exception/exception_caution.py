@@ -6,16 +6,16 @@
 [説明ページ]
 https://tech.nkhn37.net/python-exception-try-except-raise/#except_Exception
 """
-data_list = ['A', 'B', 'C']
+data_list = ["A", "B", "C"]
 
 while True:
-    input_value = input('input index (q to quit): ')
+    input_value = input("input index (q to quit): ")
 
-    if input_value == 'q':
+    if input_value == "q":
         break
 
     try:
         index = int(input_value)
         print(data_list[index])
     except Exception as ex:
-        print(f'exception: {ex}')
+        print(f"exception: {ex}")

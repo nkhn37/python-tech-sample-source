@@ -13,7 +13,7 @@ class MyException(Exception):
 
 def my_original_method(value):
     if value < 0:
-        raise MyException('minus value is not allowed')
+        raise MyException("minus value is not allowed")
     else:
         return value
 
@@ -26,5 +26,5 @@ def main():
         print(ex)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
