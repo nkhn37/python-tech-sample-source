@@ -2,11 +2,11 @@
 クラスのプロパティ（property）の使い方
 
 [説明ページ]
-https://tech.nkhn37.net/python-class-property/
+https://tech.nkhn37.net/python-class-property/#property-2
 """
 
 
-class Person(object):
+class Person:
     def __init__(self, first_name=None, last_name=None, age=None):
         self.__first_name = first_name
         self.__last_name = last_name
@@ -37,24 +37,24 @@ class Person(object):
         if value >= 0:
             self.__age = value
         else:
-            raise ValueError('Only values greater than or equal to 0 '
-                             'are allowed.')
+            raise ValueError(
+                "Only values greater than or equal to 0 are allowed."
+            )
 
     def myname(self):
-        print(f'私の名前は、{self.__last_name}{self.__first_name}、'
-              f'{self.__age}歳です。')
+        print(f"私の名前は、{self.__last_name}{self.__first_name}、{self.__age}歳です。")
 
 
 def main():
-    person1 = Person('太郎', '田中', 20)
+    person1 = Person("太郎", "田中", 20)
     print(person1.first_name)
     print(person1.last_name)
     print(person1.age)
     person1.myname()
-    print('===')
+    print("===")
 
-    person1.first_name = '次郎'
-    person1.last_name = '佐藤'
+    person1.first_name = "次郎"
+    person1.last_name = "佐藤"
     person1.age = 15
     print(person1.first_name)
     print(person1.last_name)
@@ -62,5 +62,5 @@ def main():
     person1.myname()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
