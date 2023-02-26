@@ -2,7 +2,7 @@
 ポリモーフィズムと抽象クラス、抽象メソッド
 
 [説明ページ]
-https://tech.nkhn37.net/python-class-polymorphism/
+https://tech.nkhn37.net/python-class-polymorphism/#abc
 """
 import abc
 
@@ -19,9 +19,8 @@ class Person(abc.ABC):
     def name(self, value):
         self.__name = value
 
-    @staticmethod
     def say_myname(self):
-        print(f'私の名前は、{self.__name}です。')
+        print(f"私の名前は、{self.__name}です。")
 
     @abc.abstractmethod
     def mywork(self):
@@ -41,7 +40,7 @@ class Teacher(Person):
         self.__subject = value
 
     def mywork(self):
-        print(f'私の仕事は、{self.__subject}の教師です。')
+        print(f"私の仕事は、{self.__subject}の教師です。")
 
 
 class Doctor(Person):
@@ -57,16 +56,16 @@ class Doctor(Person):
         self.__medical_speciality = value
 
     def mywork(self):
-        print(f'私の仕事は、{self.__medical_speciality}の医者です。')
+        print(f"私の仕事は、{self.__medical_speciality}の医者です。")
 
 
 def main():
-    person1 = Teacher('英語')
+    person1 = Teacher("英語")
     person1.mywork()
-    print('===')
-    person2 = Doctor('内科')
+    print("===")
+    person2 = Doctor("内科")
     person2.mywork()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
