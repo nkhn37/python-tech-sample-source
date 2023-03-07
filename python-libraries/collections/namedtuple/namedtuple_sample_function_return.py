@@ -17,7 +17,7 @@ def calculate_stat(data):
     std_v = statistics.stdev(data)
 
     # 返却値をnamedtupleで定義
-    Stat = collections.namedtuple('Stat', ['min', 'max', 'mean', 'var', 'std'])
+    Stat = collections.namedtuple("Stat", ["min", "max", "mean", "var", "std"])
     stats = Stat(min_v, max_v, mean_v, var_v, std_v)
     return stats
 
@@ -25,12 +25,14 @@ def calculate_stat(data):
 def main():
     values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     result = calculate_stat(values)
-    print(f'min:{result.min}, '
-          f'max:{result.max}, '
-          f'mean:{result.mean}, '
-          f'var:{result.var}, '
-          f'std:{result.std}')
+    print(
+        f"min:{result.min}, "
+        f"max:{result.max}, "
+        f"mean:{result.mean}, "
+        f"var:{result.var}, "
+        f"std:{result.std}"
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

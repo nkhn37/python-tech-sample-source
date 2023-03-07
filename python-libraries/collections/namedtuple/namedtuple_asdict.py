@@ -7,12 +7,12 @@ https://tech.nkhn37.net/python-collections-namedtuple/#_asdictnamedtuple
 """
 import collections
 
-Point = collections.namedtuple('Point', ['x', 'y'])
+Point = collections.namedtuple("Point", ["x", "y"])
 
 p1 = Point(10, 20)
 p_dict = p1._asdict()
 
 print(type(p_dict))
 print(p_dict)
-print(p_dict['x'])
-print(p_dict['y'])
+print(p_dict["x"])
+print(p_dict["y"])
