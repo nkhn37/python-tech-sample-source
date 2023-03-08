@@ -3,7 +3,7 @@ dequeでキューやスタックを実現する
 スタック（stack）操作の実現
 
 [説明ページ]
-https://tech.nkhn37.net/python-collections-deque/#stack
+https://tech.nkhn37.net/python-collections-deque/#dequestack
 """
 import collections
 
