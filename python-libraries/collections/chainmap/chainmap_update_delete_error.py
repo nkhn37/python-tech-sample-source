@@ -8,20 +8,20 @@ https://tech.nkhn37.net/python-collections-chainmap/#ChainMap-3
 """
 import collections
 
-dict_a = {'a': 'A'}
-dict_b = {'b': 'B'}
-dict_c = {'c': 'C'}
+dict_a = {"a": "A"}
+dict_b = {"b": "B"}
+dict_c = {"c": "C"}
 
 # ChainMapを用いて辞書を連結する
-d_map = collections.ChainMap(dict_a, dict_b, dict_c)
+d_map = collections.ChainMap(dict_c, dict_b, dict_a)
 print(d_map)
 
-print('=====')
+print("=====")
 # 値を更新する
-d_map['b'] = 'B_update'
+d_map["b"] = "B_update"
 print(d_map)
 
-print('=====')
+print("=====")
 # 値を削除する
-del d_map['c']
+del d_map["a"]
 print(d_map)
