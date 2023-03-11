@@ -6,13 +6,13 @@ https://tech.nkhn37.net/python-collections-counter/#most_common
 """
 import collections
 
-data = ['a', 'a', 'a', 'b', 'b', 'c', 'a', 'b', 'd', 'd']
+data = ["a", "a", "a", "b", "b", "c", "a", "b", "d", "d"]
 
 counter = collections.Counter(data)
 
 print(counter)
 
-print('=====')
+print("=====")
 # 上位1位までを抽出
 print(counter.most_common(1))
 # 上位2位までを抽出
