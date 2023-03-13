@@ -7,12 +7,12 @@ https://tech.nkhn37.net/python-collections-counter/#i
 import collections
 import re
 
-with open('input.txt', 'r', encoding='UTF-8') as f:
-    words = re.findall(r'\w+', f.read().lower())
+with open("input.txt", "r", encoding="UTF-8") as f:
+    words = re.findall(r"\w+", f.read().lower())
 
-print(f'words = {words}')
+print(f"words = {words}")
 
-print('=====')
+print("=====")
 counter = collections.Counter(words)
 print(counter)
 print(counter.most_common(3))

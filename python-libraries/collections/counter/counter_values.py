@@ -6,13 +6,12 @@ https://tech.nkhn37.net/python-collections-counter/#values
 """
 import collections
 
-data = ['a', 'a', 'a', 'b', 'b', 'c', 'a', 'b', 'd', 'd']
+data = ["a", "a", "a", "b", "b", "c", "a", "b", "d", "d"]
 
 counter = collections.Counter(data)
-
 print(counter)
 
-print('=====')
+print("=====")
 # カウント数の値のみをを取り出す
 print(counter.values())
 # カウント数の合計を計算する
