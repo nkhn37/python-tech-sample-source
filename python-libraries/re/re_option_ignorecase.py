@@ -6,12 +6,12 @@ https://tech.nkhn37.net/python-re-options/#IGNORECASE
 """
 import re
 
-text = 'メールアドレスは、user_01@test.comと' \
-       'プライベート用のUSER_02@test.co.jpを使用しています。'
+text = "メールアドレスは、user_01@test.comとプライベート用のUSER_02@test.co.jpを使用しています。"
 
-ptrn = re.compile(r'([a-z0-9_.+-]+)@'
-                  r'([a-z0-9][a-z0-9-]*[a-z0-9]*\.)+[a-z]{2,}',
-                  re.IGNORECASE)
+ptrn = re.compile(
+    r"([a-z0-9_.+-]+)@([a-z0-9][a-z0-9-]*[a-z0-9]*\.)+[a-z]{2,}",
+    re.IGNORECASE,
+)
 
 results = ptrn.finditer(text)
 for result in results:

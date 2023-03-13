@@ -6,12 +6,12 @@ https://tech.nkhn37.net/python-re-regular-expression/#search
 """
 import re
 
-text1 = '電話番号は、090-1111-2222です。'
-text2 = '電話番号は、0123-45-6789です。'
+text1 = "電話番号は、090-1111-2222です。"
+text2 = "電話番号は、0123-45-6789です。"
 
 # 正規表現をcompileで準備する
 # \を使うのでrのraw文字列として引数に設定する
-ptrn = re.compile(r'(\d{2,4})-(\d{2,4})-(\d{4})')
+ptrn = re.compile(r"(\d{2,4})-(\d{2,4})-(\d{4})")
 
 # 文字列を検索し、結果を表示する
 result1 = ptrn.search(text1)
@@ -26,9 +26,9 @@ if result1:
     # 3番目の部分文字列
     print(result1.group(3))
 else:
-    print('一致なし')
+    print("一致なし")
 
-print('=====')
+print("=====")
 # Python 3.8以降であればセイウチ演算子を使ってもよい
 if result2 := ptrn.search(text2):
     print(result2.group())
@@ -36,4 +36,4 @@ if result2 := ptrn.search(text2):
     print(result2.group(2))
     print(result2.group(3))
 else:
-    print('一致なし')
+    print("一致なし")

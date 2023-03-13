@@ -6,18 +6,17 @@ https://tech.nkhn37.net/python-re-options/#DOTALL
 """
 import re
 
-text = '単一行モードを使用すると\n' \
-       '改行コードを含めて抽出できる'
+text = "単一行モードを使用すると\n改行コードを含めて抽出できる"
 
 # 単一行モードを有効にしない場合
-ptrn1 = re.compile(r'^.+')
+ptrn1 = re.compile(r"^.+")
 
 if result1 := ptrn1.search(text):
     print(result1.group())
 
-print('=====')
+print("=====")
 # 単一行モードを有効にした場合
-ptrn2 = re.compile(r'^.+', re.DOTALL)
+ptrn2 = re.compile(r"^.+", re.DOTALL)
 
 if result2 := ptrn2.search(text):
     print(result2.group())

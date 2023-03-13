@@ -6,13 +6,16 @@ https://tech.nkhn37.net/python-re-options/#VERBOSE
 """
 import re
 
-text = '私のメールアドレスは、user_01@test.comです。'
+text = "私のメールアドレスは、user_01@test.comです。"
 
-ptrn = re.compile(r'''([a-z0-9_.+-]+) #local
-                      @ #delimiter
-                      ([a-z0-9][a-z0-9-]*[a-z0-9]*\.)+[a-z]{2,} #domain''',
-                  re.VERBOSE)
+ptrn = re.compile(
+    r"""
+    ([a-z0-9_.+-]+) #local
+    @ #delimiter
+    ([a-z0-9][a-z0-9-]*[a-z0-9]*\.)+[a-z]{2,} #domain
+    """,
+    re.VERBOSE,
+)
 
 if result := ptrn.search(text):
     print(result.group())
-
