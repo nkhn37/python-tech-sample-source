@@ -12,7 +12,7 @@ def main():
     print(password)
 
     # SHA-256でハッシュ化
-    digest = hashlib.sha512(password.encode("utf-8")).hexdigest()
+    digest = hashlib.sha256(password.encode("utf-8")).hexdigest()
     print(digest)
 
 
