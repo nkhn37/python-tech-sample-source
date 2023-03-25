@@ -1,6 +1,0 @@
-DB_SERVER:
-  HOST: xxx.xxx.xxx.xxx
-  PORT: 3306
-WEB_SERVER:
-  HOST: xxx.xxx.xxx.xxx
-  PORT: 80

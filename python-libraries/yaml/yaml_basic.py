@@ -2,36 +2,30 @@
 基本的な使い方
 
 [説明ページ]
-https://tech.nkhn37.net/python-yaml-basic/#PyYAMLYAML
+https://tech.nkhn37.net/python-yaml-basic/#PyYAML-2
 """
 import yaml
 
-with open('config.yml', 'w') as yml_file:
-    dump_data = {
-        'WEB_SERVER': {
-            'HOST': 'xxx.xxx.xxx.xxx',
-            'PORT': 80
-        },
-        'DB_SERVER': {
-            'HOST': 'xxx.xxx.xxx.xxx',
-            'PORT': 3306
-        }
-    }
+yaml_data = {
+    "WEB_SERVER": {"HOST": "192.168.1.100", "PORT": 80},
+    "DB_SERVER": {"HOST": "192.168.1.200", "PORT": 3306},
+}
 
-    # yamlファイルへの書き込み
-    yaml.dump(dump_data, yml_file)
+# YAMLファイルの書き込み
+with open("config.yml", "w") as yml_file:
+    # 書き込み
+    yaml.dump(yaml_data, yml_file)
 
-# yamlファイルからの読み込み
-with open('config.yml', 'r') as yml_file1:
-    data = yaml.load(yml_file1, Loader=yaml.SafeLoader)
-    # 読み込んだ結果の参照
-    print(type(data))
-    print(data)
-    print('=====')
-    print(data['WEB_SERVER'])
-    print(data['WEB_SERVER']['HOST'])
-    print(data['WEB_SERVER']['PORT'])
-    print('=====')
-    print(data['DB_SERVER'])
-    print(data['DB_SERVER']['HOST'])
-    print(data['DB_SERVER']['PORT'])
+# YAMLファイルの読み込み
+with open("config.yml", "r") as yml_file1:
+    # 読み込み
+    load_data = yaml.load(yml_file1, Loader=yaml.SafeLoader)
+
+print(type(load_data))
+# 読み込んだ結果の参照
+print(load_data["WEB_SERVER"])
+print(load_data["WEB_SERVER"]["HOST"])
+print(load_data["WEB_SERVER"]["PORT"])
+print(load_data["DB_SERVER"])
+print(load_data["DB_SERVER"]["HOST"])
+print(load_data["DB_SERVER"]["PORT"])
