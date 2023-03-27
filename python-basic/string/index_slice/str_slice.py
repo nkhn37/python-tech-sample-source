@@ -2,10 +2,10 @@
 スライスで部分文字列を取得する
 
 [説明ページ]
-https://tech.nkhn37.net/python-index-slice/#i-4
+https://tech.nkhn37.net/python-index-slice/#i-3
 """
 # スライスで部分文字列を取得する
-data = 'abcdefghijklmnopqrstuvwxyz'
+data = "abcdefghijklmnopqrstuvwxyz"
 
 # start, end, stepを全て指定する
 print(data[5:10:2])
