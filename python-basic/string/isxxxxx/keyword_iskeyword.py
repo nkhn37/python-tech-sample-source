@@ -3,16 +3,15 @@
 keywordモジュールのiskeyword
 
 [説明ページ]
-https://tech.nkhn37.net/python-keyword-iskeyword/
+https://tech.nkhn37.net/python-isxxxxx/#_keywordiskeyword
 """
-import keyword
+from keyword import iskeyword
 
-id_str1 = 'python'
-id_str2 = 'class'
+print("python")
+print(f"identifier: {'python'.isidentifier()}")
+print(f"iskeyword: {iskeyword('python')}\n")
 
-print(f'{id_str1}の判定')
-print(f'identifier: {id_str1.isidentifier()}')
-print(f'iskeyword: {keyword.iskeyword(id_str1)}')
-print(f'{id_str2}の判定')
-print(f'identifier: {id_str2.isidentifier()}')
-print(f'iskeyword: {keyword.iskeyword(id_str2)}')
+# 予約済みキーワードの場合
+print("class")
+print(f"identifier: {'class'.isidentifier()}")
+print(f"iskeyword: {iskeyword('class')}")

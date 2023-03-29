@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_isprintable
 """
-print('=== isprintable ===')
-print('Python Program'.isprintable())
-print('Python\nProgram'.isprintable())
+print("=== isprintable ===")
+print("Python Program".isprintable())
+print("Python\nProgram".isprintable())

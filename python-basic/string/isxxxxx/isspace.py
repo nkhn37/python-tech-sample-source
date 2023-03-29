@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_isspace
 """
-print('=== isspace ===')
-print(' '.isspace())
-print('abcdefgh'.isspace())
+print("=== isspace ===")
+print(" ".isspace())
+print("abcdefgh".isspace())

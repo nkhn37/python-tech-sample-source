@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_isdigit
 """
-print('=== isdigit ===')
-print('12345'.isdigit())
-print('0b0101'.isdigit())
+print("=== isdigit ===")
+print("12345".isdigit())
+print("0b0101".isdigit())

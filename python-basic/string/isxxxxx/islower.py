@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_islower
 """
-print('=== islower ===')
-print('python'.islower())
-print('PYTHON'.islower())
+print("=== islower ===")
+print("python".islower())
+print("PYTHON".islower())

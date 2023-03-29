@@ -5,6 +5,6 @@ ASCII文字であるかを判定する isascii
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#ASCII_isascii
 """
-print('=== isascii ===')
-print('abcdefgh'.isascii())
-print('あいうえお'.isascii())
+print("=== isascii ===")
+print("abcdefgh".isascii())
+print("あいうえお".isascii())

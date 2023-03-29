@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_isnumeric
 """
-print('=== isnumeric ===')
-print('一万五千'.isnumeric())
-print('0b0101'.isnumeric())
+print("=== isnumeric ===")
+print("一万五千".isnumeric())
+print("0b0101".isnumeric())

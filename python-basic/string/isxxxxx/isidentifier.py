@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_isidentifier
 """
-print('=== isidentifier ===')
-print('pytyon_12345'.isidentifier())
-print('python-12345'.isidentifier())
+print("=== isidentifier ===")
+print("pytyon_12345".isidentifier())
+print("python-12345".isidentifier())

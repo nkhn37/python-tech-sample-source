@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#_isupper
 """
-print('=== isupper ===')
-print('PYTHON'.isupper())
-print('python'.isupper())
+print("=== isupper ===")
+print("PYTHON".isupper())
+print("python".isupper())

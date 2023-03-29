@@ -5,6 +5,6 @@
 [説明ページ]
 https://tech.nkhn37.net/python-isxxxxx/#10_isdecimal
 """
-print('=== isdecimal ===')
-print('12345'.isdecimal())
-print('0b0101'.isdecimal())
+print("=== isdecimal ===")
+print("12345".isdecimal())
+print("0b0101".isdecimal())
