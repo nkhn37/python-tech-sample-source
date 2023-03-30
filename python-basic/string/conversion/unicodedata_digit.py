@@ -9,7 +9,7 @@ import unicodedata
 
 # unicodedata.digitを用いた変換
 # 上付き数字／下付き数字の変換
-num1 = unicodedata.digit('⁰')
+num1 = unicodedata.digit("⁰")
 print(num1)
-num2 = unicodedata.digit('₁')
+num2 = unicodedata.digit("₁")
 print(num2)

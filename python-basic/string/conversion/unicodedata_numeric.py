@@ -9,13 +9,13 @@ import unicodedata
 
 # unicodedata.numericを用いた変換
 # 上付き数字／下付き数字の変換
-num1 = unicodedata.numeric('⁰')
+num1 = unicodedata.numeric("⁰")
 print(num1)
-num2 = unicodedata.numeric('₁')
+num2 = unicodedata.numeric("₁")
 print(num2)
 # 漢数字の変換
-num3 = unicodedata.numeric('弐')
+num3 = unicodedata.numeric("弐")
 print(num3)
 # ローマ数字の変換
-num4 = unicodedata.numeric('Ⅲ')
+num4 = unicodedata.numeric("Ⅲ")
 print(num4)
