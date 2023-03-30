@@ -4,9 +4,9 @@
 [説明ページ]
 https://tech.nkhn37.net/python-in-startswith-endswith/#_endswith
 """
-sample_text = 'Pythonプロジェクト'
+sample_text = "Pythonプロジェクト"
 
 # endswithによる判定
-print('--- endswith')
-print(sample_text.endswith('Python'))
-print(sample_text.endswith('プロジェクト'))
+print("--- endswith")
+print(sample_text.endswith("Python"))
+print(sample_text.endswith("プロジェクト"))

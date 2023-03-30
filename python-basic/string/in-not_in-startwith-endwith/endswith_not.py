@@ -5,9 +5,9 @@ notによる反転
 [説明ページ]
 https://tech.nkhn37.net/python-in-startswith-endswith/#_endswith
 """
-sample_text = 'Pythonプロジェクト'
+sample_text = "Pythonプロジェクト"
 
 # endswithによる判定 notによる反転
-print('--- endswith')
-print(not sample_text.endswith('Python'))
-print(not sample_text.endswith('プロジェクト'))
+print("--- not endswith")
+print(not sample_text.endswith("Python"))
+print(not sample_text.endswith("プロジェクト"))
