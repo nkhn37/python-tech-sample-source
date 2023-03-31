@@ -1,26 +1,27 @@
 """文字列基礎
 index, rindexで文字列を検索する
-見つからない場合は例外(ValueError)を返却
+(見つからない場合は例外(ValueError)を返却)
 
 [説明ページ]
-https://tech.nkhn37.net/python-find-rfind-index-rindex/#_index_rindex
+https://tech.nkhn37.net/python-find-rfind-index-rindex/#i-4
 """
-sample_text = 'Pythonプロジェクトを作ってPythonプログラミングを始めよう！'
+sample_text = "Pythonプロジェクトを作ってPythonプログラミングを始めよう！"
+print(sample_text)
 
 # indexで文字列を検索する
-print('--- index')
+print("--- index")
 try:
-    print(sample_text.index('Python'))
-    print(sample_text.index('プログラミング'))
-    print(sample_text.index('JAVA'))
+    print(sample_text.index("Python"))
+    print(sample_text.index("プログラミング"))
+    print(sample_text.index("JAVA"))
 except ValueError as ex:
     print(ex)
 
 # rindexで文字列を検索する
-print('--- rindex')
+print("--- rindex")
 try:
-    print(sample_text.rindex('Python'))
-    print(sample_text.rindex('プログラミング'))
-    print(sample_text.rindex('JAVA'))
+    print(sample_text.rindex("Python"))
+    print(sample_text.rindex("プログラミング"))
+    print(sample_text.rindex("JAVA"))
 except ValueError as ex:
     print(ex)
