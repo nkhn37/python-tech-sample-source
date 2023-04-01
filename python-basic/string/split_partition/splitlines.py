@@ -4,14 +4,14 @@
 [説明ページ]
 https://tech.nkhn37.net/python-split-splitlines-partition/#_splitlines
 """
-sample_text = '''\
+sample_text = """\
 Python
 Java
 C
 C++
 C#
 Go
-'''
+"""
 
 # splitlinesにより改行文字で分割する
 print(sample_text.splitlines())
