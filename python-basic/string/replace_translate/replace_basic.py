@@ -4,7 +4,7 @@
 [説明ページ]
 https://tech.nkhn37.net/python-replace-translate/#_replace
 """
-sample_text = 'Pythonプロジェクトを作成してPythonを学習しよう！'
+sample_text = "Pythonプロジェクトを作成してPythonを学習しよう！"
 
-print(sample_text.replace('Python', 'Java'))
-print(sample_text.replace('Python', 'Java', 1))
+print(sample_text.replace("Python", "Java"))
+print(sample_text.replace("Python", "Java", 1))
