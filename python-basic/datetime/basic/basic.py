@@ -16,8 +16,7 @@ print(datetime.date.today())
 print(datetime.datetime.now())
 
 # timezoneを指定する（日本標準時）
-print(datetime.datetime.now(
-    datetime.timezone(datetime.timedelta(hours=9))))
+print(datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9))))
 
 # 標準時を表示する
 print(datetime.datetime.utcnow())

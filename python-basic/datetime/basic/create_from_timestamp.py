@@ -15,8 +15,10 @@ print(ts)
 # タイムスタンプから日付、時刻を取得する
 print(datetime.datetime.fromtimestamp(ts))
 # タイムゾーンを指定する場合
-print(datetime.datetime.fromtimestamp(
-    ts, datetime.timezone(datetime.timedelta(hours=9))))
+print(
+    datetime.datetime.fromtimestamp(
+        ts, datetime.timezone(datetime.timedelta(hours=9))
+    )
+)
 # UTCを指定する場合
-print(datetime.datetime.fromtimestamp(
-    ts, datetime.timezone.utc))
+print(datetime.datetime.fromtimestamp(ts, datetime.timezone.utc))

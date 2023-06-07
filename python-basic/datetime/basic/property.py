@@ -8,11 +8,10 @@ https://tech.nkhn37.net/python-datetime-basic/#i-7
 import datetime
 
 # dt = datetime.datetime.now()
-dt = datetime.datetime.now(
-    datetime.timezone(datetime.timedelta(hours=9)))
+dt = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
 print(dt)
 
-print('===')
+print("===")
 # 年を取得する
 print(dt.year)
 # 月を取得する

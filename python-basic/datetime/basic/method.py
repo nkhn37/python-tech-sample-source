@@ -8,11 +8,10 @@ https://tech.nkhn37.net/python-datetime-basic/#i-8
 import datetime
 
 # dt = datetime.datetime.now()
-dt = datetime.datetime.now(
-    datetime.timezone(datetime.timedelta(hours=9)))
+dt = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
 print(dt)
 
-print('===')
+print("===")
 # dateメソッド
 print(dt.date())
 # timeメソッド

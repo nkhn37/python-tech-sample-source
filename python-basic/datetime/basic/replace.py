@@ -9,7 +9,7 @@ import datetime
 dt = datetime.datetime.now()
 print(dt)
 
-print('===')
+print("===")
 # 年を変更する
 print(dt.replace(year=2020))
 # 月を変更する

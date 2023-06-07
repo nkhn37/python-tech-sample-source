@@ -9,8 +9,10 @@ import datetime
 # === 日付、時刻を指定して生成する
 print(datetime.datetime(2021, 1, 1, 0, 0, 0, 0))
 # タイムゾーンを指定する
-print(datetime.datetime(2021, 1, 1, 0, 0, 0, 0),
-      datetime.timezone(datetime.timedelta(hours=9)))
+print(
+    datetime.datetime(2021, 1, 1, 0, 0, 0, 0),
+    datetime.timezone(datetime.timedelta(hours=9)),
+)
 
 # === 日付を指定して生成する ※dateクラスはタイムゾーンを指定できないので注意
 print(datetime.date(2021, 1, 1))
@@ -18,5 +20,6 @@ print(datetime.date(2021, 1, 1))
 # === 時刻を指定して生成する
 print(datetime.time(0, 0, 0, 0))
 # タイムゾーンを指定する
-print(datetime.time(0, 0, 0, 0),
-      datetime.timezone(datetime.timedelta(hours=9)))
+print(
+    datetime.time(0, 0, 0, 0), datetime.timezone(datetime.timedelta(hours=9))
+)
