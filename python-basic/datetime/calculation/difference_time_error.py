@@ -3,7 +3,7 @@ timeのみの差分計算はできない
 TypeErrorが発生する例
 
 [説明ページ]
-https://tech.nkhn37.net/python-datetime-calculation/#timeTypeError-2
+https://tech.nkhn37.net/python-datetime-calculation/#_time-2
 """
 # time同士の差分をとることはできない
 import datetime

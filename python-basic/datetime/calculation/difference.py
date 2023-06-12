@@ -12,7 +12,7 @@ dt2 = datetime.datetime(2022, 1, 1, 12, 15, 15, 250)
 # 差分を求める
 dt_diff = dt1 - dt2
 
-print('=== datetimeの差分')
+print("=== datetimeの差分")
 print(dt_diff)
 print(type(dt_diff))
 print(dt_diff.days)
@@ -24,7 +24,7 @@ d2 = datetime.date(2022, 1, 1)
 # 差分を求める
 d_diff = d1 - d2
 
-print('=== dateの差分')
+print("=== dateの差分")
 print(d_diff)
 print(type(d_diff))
 print(d_diff.days)

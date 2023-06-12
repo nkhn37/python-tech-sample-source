@@ -3,7 +3,7 @@ timeのみの加算・減算はできない
 TypeErrorが発生する例
 
 [説明ページ]
-https://tech.nkhn37.net/python-datetime-calculation/#timeTypeError
+https://tech.nkhn37.net/python-datetime-calculation/#_time
 """
 # timeのみの加算、減算はできない
 import datetime

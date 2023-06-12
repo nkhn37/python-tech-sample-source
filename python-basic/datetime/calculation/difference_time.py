@@ -3,7 +3,7 @@ timeのみの差分計算はできない
 回避する方法：timeをdatetimeに変換してから差分を計算
 
 [説明ページ]
-https://tech.nkhn37.net/python-datetime-calculation/#time-2
+https://tech.nkhn37.net/python-datetime-calculation/#_time-2
 """
 import datetime
 
@@ -15,7 +15,7 @@ t2 = datetime.datetime.combine(dt, datetime.time(0, 0, 0))
 # 差分を求める
 t_diff = t1 - t2
 
-print('=== timeの差分')
+print("=== timeの差分")
 print(t_diff)
 print(type(t_diff))
 print(t_diff.days)
