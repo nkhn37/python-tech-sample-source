@@ -1,5 +1,5 @@
 """カレンダーを作成する方法 calendarモジュール
-カレンダーをリストで取得する monthcalendar
+月間カレンダーをリストで取得する monthcalendar
 
 [説明ページ]
 https://tech.nkhn37.net/python-calendar-basic/#_monthcalendar

@@ -2,7 +2,7 @@
 最初の曜日を指定する setfirstweekday
 
 [説明ページ]
-https://tech.nkhn37.net/python-calendar-basic/#_month
+https://tech.nkhn37.net/python-calendar-basic/#_setfirstweekday
 """
 import calendar
 
