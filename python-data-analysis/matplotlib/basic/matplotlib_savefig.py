@@ -13,6 +13,6 @@ fig = plt.figure()
 plt.plot(x, np.sin(x))
 plt.plot(x, np.cos(x))
 
-fig.savefig('temp.png')
+fig.savefig("temp.png")
 
 plt.show()
