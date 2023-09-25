@@ -13,4 +13,6 @@ def func_annotation(x: int, y: int) -> int:
 if __name__ == "__main__":
     val1 = 10
     val2 = 3
+
+    # 正しい型で使用する
     print(func_annotation(val1, val2))

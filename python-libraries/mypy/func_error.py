@@ -13,4 +13,6 @@ def func_annotation(x: int, y: int) -> int:
 if __name__ == "__main__":
     val1 = "test"
     val2 = 3
+
+    # 引数xを誤った型(str)で使用する
     print(func_annotation(val1, val2))

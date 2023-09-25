@@ -8,6 +8,6 @@ https://tech.nkhn37.net/python-mypy-type-annotation-check/#i
 x: int = 10
 print(x)
 
-# 異なる型(str)を代入する
+# 正しい型(int)を代入する
 x = 20
 print(x)
