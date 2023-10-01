@@ -3,7 +3,7 @@ Threadingモジュールではないが、multiprocessingモジュールにあ�
 ThreadPoolとして使うことができる
 
 [説明ページ]
-
+https://tech.nkhn37.net/python-threading-multithread/#multiprocessingdummy
 """
 import logging
 import time
@@ -19,9 +19,8 @@ def myworker(x: int):
     logging.debug("start")
 
     time.sleep(1)
-    logging.debug(x)
 
-    logging.debug("end")
+    logging.debug(f"end: {x}")
 
 
 def main():
