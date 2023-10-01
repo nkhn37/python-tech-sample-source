@@ -22,7 +22,7 @@ def myworker(work_queue):
     # キューが空でない限り繰り返す
     while not work_queue.empty():
         try:
-            item = work_queue.get()
+            item = work_queue.get_nowait()
         except Empty:
             break
         else:
