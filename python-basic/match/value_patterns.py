@@ -11,7 +11,7 @@ class Color(Enum):
     RED = auto()
     GREEN = auto()
     BLUE = auto()
-    YELLO = auto()
+    YELLOW = auto()
 
 
 def check(target):
@@ -39,5 +39,5 @@ if __name__ == "__main__":
     check(color)
 
     print("---")
-    color = Color.YELLO
+    color = Color.YELLOW
     check(color)
