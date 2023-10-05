@@ -1,13 +1,12 @@
 """concurrent.futuresを使用した並列処理
 スレッドプールの使い方: ThreadPoolExecutor
-mapを用いた処理
 
 [説明ページ]
 
 """
-import concurrent.futures
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 logging.basicConfig(level=logging.DEBUG, format="%(threadName)s: %(message)s")
 
@@ -26,14 +25,11 @@ def main():
     logging.debug("start")
 
     # max_workersでスレッド数を指定
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executer:
-        args = [[2, 5], [3, 10]]
-        result = executer.map(myworker, *args)
-
-        # 返却値はイテレータ
-        logging.debug(result)
-        # 表示にはリスト内包表記で簡単可能
-        logging.debug([r for r in result])
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        f1 = executor.submit(myworker, 2, 3)
+        f2 = executor.submit(myworker, 5, 10)
+        logging.debug(f1.result())
+        logging.debug(f2.result())
 
     logging.debug("end")
 

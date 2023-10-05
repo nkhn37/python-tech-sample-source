@@ -1,5 +1,6 @@
 """concurrent.futuresを使用した並列処理
 プロセスプールの使い方: ProcessPoolExecutor
+mapを用いた処理
 
 [説明ページ]
 
@@ -11,7 +12,7 @@ from concurrent.futures import ProcessPoolExecutor
 logging.basicConfig(level=logging.DEBUG, format="%(processName)s: %(message)s")
 
 
-def myworker1(x: int, y: int):
+def myworker(x: int, y: int):
     logging.debug("start")
 
     result = x + y
@@ -24,12 +25,15 @@ def myworker1(x: int, y: int):
 def main():
     logging.debug("start")
 
-    # max_workersでスレッド数を指定
-    with ProcessPoolExecutor(max_workers=5) as executer:
-        f1 = executer.submit(myworker1, 2, 3)
-        f2 = executer.submit(myworker1, 5, 10)
-        logging.debug(f1.result())
-        logging.debug(f2.result())
+    # max_workersでプロセス数を指定
+    with ProcessPoolExecutor(max_workers=5) as executor:
+        args = [[2, 5], [3, 10]]
+        result = executor.map(myworker, *args)
+
+        # 返却値はイテレータ
+        logging.debug(result)
+        # 読みだしたタイミングで実行
+        logging.debug([r for r in result])
 
     logging.debug("end")
 
