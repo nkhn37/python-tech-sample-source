@@ -4,7 +4,6 @@ SeriesからNumPy配列(ndarray)に変換する
 [説明ページ]
 https://tech.nkhn37.net/pandas-series-create-basic/#SeriesNumPyndarray
 """
-import numpy as np
 import pandas as pd
 
 # Seriesを作成する
