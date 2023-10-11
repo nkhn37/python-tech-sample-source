@@ -12,7 +12,7 @@ import pandas as pd
 # int
 arr = np.array([1, 5, 2, 4, 5])
 data = pd.Series(arr)
-print(data, '\n')
+print(data, "\n")
 
 # float
 arr = np.array([1.0, 1.5, 2.0, 4.0, 5.0])

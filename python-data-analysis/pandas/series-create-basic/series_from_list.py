@@ -10,7 +10,7 @@ import pandas as pd
 # リストからSeriesを作成する
 # int
 data = pd.Series([1, 5, 2, 4, 5])
-print(data, '\n')
+print(data, "\n")
 
 # float
 data = pd.Series([1.0, 1.5, 2.0, 4.0, 5.0])
