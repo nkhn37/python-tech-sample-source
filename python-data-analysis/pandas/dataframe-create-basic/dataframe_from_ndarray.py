@@ -9,10 +9,10 @@ import numpy as np
 import pandas as pd
 
 arr = np.arange(9).reshape((3, 3))
-print(arr, '\n')
+print(arr, "\n")
 
 # 2次元のNumPy配列からDataFrameを作成する
-df = pd.DataFrame(arr,
-                  index=['A', 'B', 'C'],
-                  columns=['attr1', 'attr2', 'attr3'])
+df = pd.DataFrame(
+    arr, index=["A", "B", "C"], columns=["attr1", "attr2", "attr3"]
+)
 print(df)
