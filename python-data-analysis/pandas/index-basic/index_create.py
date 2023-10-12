@@ -10,5 +10,5 @@ import pandas as pd
 ind = pd.Index([1, 2, 3])
 print(ind)
 
-ind = pd.Index(['A', 'B', 'C'])
+ind = pd.Index(["A", "B", "C"])
 print(ind)

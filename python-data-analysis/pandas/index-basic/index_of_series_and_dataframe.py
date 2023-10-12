@@ -9,15 +9,15 @@ import numpy as np
 import pandas as pd
 
 # Series
-ser = pd.Series([1, 2, 3], index=['A', 'B', 'C'])
+ser = pd.Series([1, 2, 3], index=["A", "B", "C"])
 print(ser)
 print(ser.index)
-print('\n')
+print("\n")
 
 # DataFrame
-df = pd.DataFrame(np.arange(9).reshape((3, 3)),
-                  index=[1, 2, 3],
-                  columns=['A', 'B', 'C'])
+df = pd.DataFrame(
+    np.arange(9).reshape((3, 3)), index=[1, 2, 3], columns=["A", "B", "C"]
+)
 print(df)
 print(df.index)
 print(df.columns)
