@@ -7,9 +7,9 @@ https://tech.nkhn37.net/pandas-series-data-selection/#_in_not_in
 """
 import pandas as pd
 
-data = pd.Series([1, 2, 3, 4, 5], index=['a', 'b', 'c', 'd', 'e'])
-print(data, '\n')
+data = pd.Series([1, 2, 3, 4, 5], index=["a", "b", "c", "d", "e"])
+print(data, "\n")
 
 # キーの有無を確認する
-print('c' in data)
-print('z' in data)
+print("c" in data)
+print("z" in data)
