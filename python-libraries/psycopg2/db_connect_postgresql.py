@@ -8,38 +8,70 @@ import configparser
 
 import psycopg2
 import psycopg2.extras
+from psycopg2 import pool
 
 
 class DbConnectPostgres:
-    def __init__(self, config_file="./dbconfig.ini") -> None:
+    # 接続プール
+    connection_pool = None
+
+    @classmethod
+    def initialize_connection_pool(cls, config_file="./dbconfig.ini") -> None:
+        """接続プールの初期化
+
+        Args:
+            config_file: 設定ファイルパス
+
+        Returns:
+            None
+        """
+        if cls.connection_pool is None:
+            # コンフィグファイルからデータを取得
+            config_db = configparser.ConfigParser()
+            config_db.read(config_file)
+
+            # 接続情報の取得
+            host = config_db["POSTGRESQL_DB_SERVER"]["host"]
+            port = config_db["POSTGRESQL_DB_SERVER"]["port"]
+            dbname = config_db["POSTGRESQL_DB_SERVER"]["dbname"]
+            user = config_db["POSTGRESQL_DB_SERVER"]["user"]
+            password = config_db["POSTGRESQL_DB_SERVER"]["password"]
+            # プール設定の取得
+            minconn = int(config_db["POOL"]["minconn"])
+            maxconn = int(config_db["POOL"]["maxconn"])
+
+            # 接続プールを初期化
+            cls.connection_pool = pool.ThreadedConnectionPool(
+                minconn=minconn,
+                maxconn=maxconn,
+                host=host,
+                port=port,
+                dbname=dbname,
+                user=user,
+                password=password,
+            )
+
+    @classmethod
+    def close_connection_pool(cls):
+        """接続プールをクローズする"""
+        if cls.connection_pool:
+            cls.connection_pool.closeall()
+            cls.connection_pool = None
+
+    def __init__(self) -> None:
         """コンストラクタ"""
         # コネクションとカーソル
         self.conn = None
         self.cursor = None
 
-        # コンフィグファイルからデータを取得
-        config_db = configparser.ConfigParser()
-        config_db.read(config_file)
-
-        # 接続情報の取得
-        self.host = config_db["POSTGRESQL_DB_SERVER"]["host"]
-        self.port = config_db["POSTGRESQL_DB_SERVER"]["port"]
-        self.dbname = config_db["POSTGRESQL_DB_SERVER"]["dbname"]
-        self.user = config_db["POSTGRESQL_DB_SERVER"]["user"]
-        self.password = config_db["POSTGRESQL_DB_SERVER"]["password"]
-
     def connect(self) -> None:
         """DB接続"""
-        # コネクション確立
-        self.conn = psycopg2.connect(
-            host=self.host,
-            port=self.port,
-            dbname=self.dbname,
-            user=self.user,
-            password=self.password,
-        )
+        if self.connection_pool is None:
+            raise Exception("接続プールが初期化されていません")
 
-        # カーソル作成
+        # 接続プールからコネクションを取得
+        self.conn = self.connection_pool.getconn()
+        # カーソルを取得
         self.cursor = self.conn.cursor(
             cursor_factory=psycopg2.extras.DictCursor
         )
@@ -47,9 +79,13 @@ class DbConnectPostgres:
     def close(self) -> None:
         """DBクローズ"""
         if self.cursor:
+            # カーソルをクローズする
             self.cursor.close()
+            self.cursor = None
         if self.conn:
-            self.conn.close()
+            # 接続をプールに返却する
+            self.connection_pool.putconn(self.conn)
+            self.conn = None
 
     def __enter__(self):
         # DB接続
@@ -60,6 +96,7 @@ class DbConnectPostgres:
         if exc_type:
             # 例外発生時はロールバック
             self.rollback()
+            raise
         else:
             # 例外がなければコミット
             self.commit()

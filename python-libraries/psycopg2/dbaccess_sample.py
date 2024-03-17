@@ -8,6 +8,9 @@ from db_connect_postgresql import DbConnectPostgres
 
 
 def main():
+    # 接続プールの初期化
+    DbConnectPostgres.initialize_connection_pool()
+
     with DbConnectPostgres() as db:
         # ===== テーブルを作成する
         create_sql = (
@@ -55,6 +58,9 @@ def main():
         print("条件２")
         select_result = db.execute_query(select_sql, (30,))
         print(select_result)
+
+    # 接続プールのクローズ
+    DbConnectPostgres.close_connection_pool()
 
 
 if __name__ == "__main__":
