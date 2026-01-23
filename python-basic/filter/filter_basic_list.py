@@ -1,8 +1,8 @@
-"""filter関数の使い方の基本
+"""filter 関数の使い方の基本
 リストやタプルで結果を取得する場合
 
 [説明ページ]
-https://tech.nkhn37.net/python-filter-basic/#i-2
+https://tech.nkhn37.net/python-filter-basic
 """
 
 

@@ -1,8 +1,8 @@
-"""filter関数の使い方の基本
+"""filter 関数の使い方の基本
 基本的な使い方 (イテレータで取得する)
 
 [説明ページ]
-https://tech.nkhn37.net/python-filter-basic/#i
+https://tech.nkhn37.net/python-filter-basic
 """
 
 
