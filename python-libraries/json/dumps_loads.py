@@ -1,9 +1,10 @@
-"""jsonモジュール
-Python辞書とJSON形式文字列間での変換 dumps, loads
+"""json モジュールの基本
+Python 辞書と JSON 形式文字列間での変換 dumps, loads
 
 [説明ページ]
-https://tech.nkhn37.net/python-json-dump-load/#PythonJSON_dumps_loads
+https://tech.nkhn37.net/python-json-dump-load
 """
+
 import json
 
 # データを用意
@@ -15,12 +16,12 @@ data = {
     ]
 }
 
-# JSON形式文字列への変換
+# JSON 形式文字列への変換
 json_data = json.dumps(data)
 print(json_data)
 print(type(json_data), "\n")
 
-# JSON形式文字列を辞書へ変換
+# JSON 形式文字列を辞書へ変換
 data_dic = json.loads(json_data)
 print(data_dic)
 print(type(data_dic))
