@@ -1,3 +1,9 @@
+"""ctypes で外部 DLL を使用する方法
+
+[説明ページ]
+https://tech.nkhn37.net/python-ctypes-basic/
+"""
+
 import ctypes
 from ctypes import wintypes
 
