@@ -4,6 +4,7 @@
 [説明ページ]
 https://tech.nkhn37.net/python-tuple-basic/#i-4
 """
+
 # タプルのアンパック
 tpl = ("A", "B", "C")
 a, b, c = tpl

@@ -4,6 +4,7 @@
 [説明ページ]
 https://tech.nkhn37.net/python-tuple-basic/#i
 """
+
 # タプルの作成方法
 tpl = ("A", "B", "C")
 print(type(tpl))
